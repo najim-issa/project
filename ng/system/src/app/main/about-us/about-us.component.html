@@ -1,0 +1,38 @@
+<div class="menu">
+    <mat-toolbar color="primary" class="mat-elevation-z8">
+        <span>Sustainable Waste Management Plan</span>
+        <div class="space"></div>
+            <a mat-raised-button color="accent" href="/">Back Home</a>
+    </mat-toolbar>
+  </div>
+  <div class="spacer"></div>
+  <div class="aboutus-container">
+    <h1>About Us</h1>
+    <p>Our Commitment to Waste Sustainable Management</p>
+    <div class="aboutus-content">
+      <h2>Waste Sustainable Management Plan</h2>
+      <p>
+        We are dedicated to sustainable waste management practices to protect the environment and conserve natural resources. Our plan includes:
+      </p>
+      <ul>
+        <li>Reducing waste at the source.</li>
+        <li>Recycling and reusing materials.</li>
+        <li>Composting organic waste.</li>
+        <li>Proper disposal of hazardous waste.</li>
+        <li>Education and awareness programs.</li>
+      </ul>
+    </div>
+    <button (click)="toggleMoreInfo()">Read More</button>
+    <div *ngIf="showMoreInfo" class="more-info">
+      <p>
+        Our comprehensive waste management strategy involves collaboration with local communities, businesses, and government agencies. We aim to create a sustainable future through innovative solutions and continuous improvement.
+      </p>
+    </div>
+  </div>
+  <div class="spacer-2"></div>
+  <div class="outer-footer">
+    <p>Copyright &copy; 2024 Clever Developer</p>
+    <div>
+
+
+  

@@ -1,0 +1,101 @@
+<div>
+    <div class="menu">
+        <mat-toolbar color="primary" class="mat-elevation-z8">
+            <span>Sustainable Waste Management Plan</span>
+            <div class="space"></div>
+            <ul>
+                <a mat-raised-button color="accent" href="">Home</a>
+                <a mat-button href="aboutus">About Us</a>
+                <a mat-button (click)="openDialog()">Contact us</a>
+                <a mat-button type="button" [matMenuTriggerFor]="settingsMenu">Login<mat-icon ><img src="assets/images/icon.png" style="width: 100%;"></mat-icon></a>
+                <!-- <a mat-button type="button" [matMenuTriggerFor]="settingsMenu1">Sign Up<mat-icon ><img src="assets/images/icon.png"  style="width: 100%;"></mat-icon></a> -->
+            </ul>
+        </mat-toolbar>
+  
+        <mat-menu #settingsMenu="matMenu">
+            <menu mat-button mat-menu-item routerLink="/login">User Login</menu>
+          </mat-menu>
+  
+          <mat-menu #settingsMenu1="matMenu">
+            <menu mat-button mat-menu-item routerLink="/signup">User Signup</menu>
+          </mat-menu>
+  
+    </div>
+  
+    <div class="imagetu">
+        <img src="assets/images/images (12).jpeg" style="width: 100%; height:450px;">
+    </div><br>
+
+    <div class="wrapper">
+        <section class="columns">
+            <div class="colum">
+                <p class="range">It encompasses a range of tasks and responsibilities related to the organization,
+                    coordination, and deliver of waste</p>
+                <img src="assets/images/images (17).jpeg" style="width: 150%; border-radius: 10px;">
+            </div>
+  
+            <div class="colum">
+                <p class="range">It encompasses a range of tasks and responsibilities related to the organization,
+                    coordination, and deliver of waste</p>
+                <img src="assets/images/images (16).jpeg" style="width: 145%; border-radius: 10px;">
+            </div>
+               <div class="colum">
+                <p class="range">It encompasses a range of tasks and responsibilities related to the organization,
+                    coordination, and deliver of Waste</p>
+                <img src="assets/images/images (15).jpeg" style="width: 137%; border-radius: 10px;">
+            </div>
+        </section>
+    </div>
+  
+    <footer>
+        <div class="row primary">
+            <div class="column about"> 
+  <br>
+                <div class="social">
+                    <i><img src="assets/images/facebook.png" style="width: 50px;"></i>
+                    <i><img src="assets/images/whatsapp.png" style="width: 50px;"></i>
+                    <i><img src="assets/images/twitter.png" style="width: 50px;"></i>
+                    <i><img src="assets/images/instagram.png" style="width: 50px;"></i>
+                </div>
+            </div>
+  
+            <div class="column links">
+                <h3>Some Links</h3>
+                <ul class="kazi">
+                    <li class="kazi1"><a href="#faq" class="kazi3">F.A.Q</a></li>
+                    <li class="kazi1"><a href="#cookies-policy" class="kazi3">Cookies Policy</a></li>
+                    <li class="kazi1"><a href="#terms-of-services" class="kazi3">Terms Of Service</a></li>
+                    <li class="kazi1"><a href="#support" class="kazi3">Support</a></li>
+                </ul>
+            </div>
+  
+            <div class="column links">
+                <h3>Some Links</h3>
+                <ul class="kazi">
+                    <li class="kazi1"><a href="#faq" class="kazi3">F.A.Q</a></li>
+                    <li class="kazi1"><a href="#cookies-policy" class="kazi3">Cookies Policy</a></li>
+                    <li class="kazi1"><a href="#terms-of-services" class="kazi3">Terms Of Service</a></li>
+                    <li class="kazi1"><a href="#support" class="kazi3">Support</a></li>
+                </ul>
+            </div>
+  
+            <div class="column subscribe">
+                <h3>Newsletter</h3>
+                <div>
+                    <input type="email" placeholder="Your email id here" />
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+  
+        <div class="row copyright">
+            <div class="footer-down-menu">
+                <a href="" class="kazi3">Home</a>
+                <a href="" class="kazi3">About</a>
+                <a href="" class="kazi3">Contact</a>
+                <a href="" class="kazi3">Blog</a>
+                <a href="" class="kazi3">Social</a>
+            </div>
+            <p>Copyright &copy; 2024 Clever Developer</p>
+        </div>
+    </footer>

@@ -1,0 +1,39 @@
+<div class="menu">
+  <mat-toolbar color="primary" class="mat-elevation-z8">
+    <span>Sustainable Waste Management Plan</span>
+    <div class="space"></div>
+    <a mat-raised-button color="accent" href="/">Back Home</a>
+  </mat-toolbar>
+</div>
+
+<div class="login-page">
+  <div class="login-section">
+    <div class="login-container">
+      <h2>Login</h2>
+      <form (ngSubmit)="onSubmit()">
+        <div class="input-container">
+          <input matInput type="text" placeholder="Username" name="username" [(ngModel)]="username" required>
+        </div>
+
+        <div class="input-container">
+          <input matInput type="password" placeholder="Password" name="password" [(ngModel)]="password" required>
+        </div>
+
+        <div *ngIf="errorMessage" class="error-message">
+          {{ errorMessage }}
+        </div>
+
+        <div class="forgot-password">
+          <a href="#">Forgot your password?</a>
+        </div>
+
+        <button mat-raised-button color="primary" type="submit" class="login-btn">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="spacer-2"></div>
+<div class="outer-footer">
+  <p>Copyright &copy; 2024 Clever Developer</p>
+</div>

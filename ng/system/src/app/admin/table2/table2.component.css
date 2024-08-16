@@ -1,0 +1,39 @@
+.main-body {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.full-width-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.mat-paginator {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-image {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .mat-form-field {
+        margin-bottom: 10px;
+    }
+
+    .icon-image {
+        width: 16px;
+        height: 16px;
+    }
+}

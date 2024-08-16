@@ -1,0 +1,70 @@
+<div class="main-body">
+
+    <mat-form-field>
+        <mat-label>Filter</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+    </mat-form-field>
+
+    <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource" matSort>
+
+            <!-- ID Column -->
+            <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+                <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Full Name </th>
+                <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+            </ng-container>
+
+            <!-- Email Column -->
+            <ng-container matColumnDef="email">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+                <td mat-cell *matCellDef="let row"> {{row.email}} </td>
+            </ng-container>
+
+            <!-- Phone Number Column -->
+            <ng-container matColumnDef="phone_number">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Phone Number </th>
+                <td mat-cell *matCellDef="let row"> {{row.phone_number}} </td>
+            </ng-container>
+
+            <!-- Address Column -->
+            <ng-container matColumnDef="shehia">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Shehia </th>
+                <td mat-cell *matCellDef="let row"> {{row.shehia}} </td>
+            </ng-container>
+
+            <!-- Action Column -->
+          <!-- Action Column -->
+<ng-container matColumnDef="action">
+    <th mat-header-cell *matHeaderCellDef> Action </th>
+    <td mat-cell *matCellDef="let row">
+        <!-- Delete button with image -->
+        <button mat-icon-button (click)="deleteDetails(row.id)">
+            <img src="assets/img/11.png" alt="Delete Icon" class="icon-image">
+        </button>
+
+        <!-- Edit button with image -->
+        <button mat-icon-button (click)="openAddEditPdetails(row)">
+            <img src="assets/img/111.png" alt="Edit Icon" class="icon-image">
+        </button>
+    </td>
+</ng-container>
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+            <!-- Row shown when there is no matching data -->
+            <tr class="mat-row" *matNoDataRow>
+                <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+            </tr>
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+    </div>
+</div>

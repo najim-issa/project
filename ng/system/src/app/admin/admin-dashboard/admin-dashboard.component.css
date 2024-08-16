@@ -1,0 +1,9 @@
+/* Example for top navbar */
+.top-navbar {
+    position: fixed; /* Ensure it is fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Lower than Snackbar */
+  }
+  

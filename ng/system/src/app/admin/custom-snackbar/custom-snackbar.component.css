@@ -1,0 +1,15 @@
+.snackbar-success {
+    background-color: #d4edda !important;
+    color: #155724 !important;
+  }
+  
+  .snackbar-error {
+    background-color: #f8d7da !important;
+    color: #721c24 !important;
+  }
+
+  .spacer-2 {
+    height: 50px; 
+  }
+
+  
